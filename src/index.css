@@ -13,6 +13,18 @@ body {
   text-shadow: 0 0 10px #00FFFF, 0 0 20px #00FFFF, 0 0 30px #00FFFF;
 }
 
+.text-shadow-password {
+    text-shadow: 0 0 6px rgba(0,255,255,0.8), 0 0 20px rgba(0,255,255,0.5);
+    color: rgba(0,255,255,0.);
+}
+
+.text-shadow-password::placeholder {
+    text-shadow: none;
+    color: #6b7280;
+}
+
+
+
 
 
 {{/* @media (prefers-color-scheme: light) {
