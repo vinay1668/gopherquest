@@ -9,17 +9,16 @@ function Login() {
 
 
     const handleSubmit = (e: { preventDefault: () => void; }) => {
-        alert("dfj")
         e.preventDefault();
         if (username === 'vinay' && password === 'Morpheous') {
             localStorage.setItem('isAuthenticated', 'true');
-            alert("set")
             navigate('/dashboard');
         }
     };
 
     return (
-        <div className="flex items-start justify-center min-h-screen pt-20">
+        <div className="flex flex-col items-center justify-center pt-20">
+            <h1 className="text-4xl font-bold text-center mb-8 text-cyan-100 shadow-cyan-500/50">GopherQuest: Code of the Future</h1>
             <form onSubmit={handleSubmit} className="bg-gray-900 bg-opacity-80 p-8 rounded-lg shadow-lg w-96">
                 <h2 className="text-3xl font-bold mb-6 text-cyan-300 text-center">Enter the Digital Realm</h2>
                 <div className="mb-4">

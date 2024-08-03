@@ -59,7 +59,7 @@ const quests = [
     }
 ];
 
-function Dashboard() {
+function Home() {
     return (
         <div className="bg-gray-900 text-cyan-300 p-8 min-h-screen font-mono">
             <div className="max-w-4xl mx-auto">
@@ -87,4 +87,4 @@ function Dashboard() {
     );
 }
 
-export default Dashboard;
+export default Home;

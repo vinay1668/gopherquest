@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Login from './components/login';
 import Signup from './components/signup';
-import Dashboard from './components/dashboard';
+import Dashboard from './components/home';
 import PrivateRoute from './components/privateRoutes';
 
 // import Home from './components/Home';
@@ -29,7 +29,6 @@ function App() {
             </div>
           </nav>
           <div className="container mx-auto px-4 py-8">
-            <h1 className="text-4xl font-bold text-center mb-8 text-cyan-100 shadow-cyan-500/50">GopherQuest: Code of the Future</h1>
             <Routes>
               {/* <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
