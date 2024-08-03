@@ -9,9 +9,11 @@ function Login() {
 
 
     const handleSubmit = (e: { preventDefault: () => void; }) => {
+        alert("dfj")
         e.preventDefault();
         if (username === 'vinay' && password === 'Morpheous') {
             localStorage.setItem('isAuthenticated', 'true');
+            alert("set")
             navigate('/dashboard');
         }
     };
