@@ -1,12 +1,20 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-body {
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #000000; /* Black */
   font-family: 'Share Tech Mono', monospace;
+}
+
+#root {
+  min-height: 100%;
+  background-color: #00008B; /* Dark Blue */
 }
 
 .glow {
@@ -15,27 +23,10 @@ body {
 
 .text-shadow-password {
     text-shadow: 0 0 6px rgba(0,255,255,0.8), 0 0 20px rgba(0,255,255,0.5);
-    color: rgba(0,255,255,0.);
+    color: rgba(0,255,255,0);
 }
 
 .text-shadow-password::placeholder {
     text-shadow: none;
     color: #6b7280;
 }
-
-
-
-
-
-{{/* @media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-} */}}

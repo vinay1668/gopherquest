@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 
@@ -12,7 +12,7 @@ function Login() {
         e.preventDefault();
         if (username === 'vinay' && password === 'Morpheous') {
             localStorage.setItem('isAuthenticated', 'true');
-            navigate('/dashboard');
+            navigate('/mainframe');
         }
     };
 
