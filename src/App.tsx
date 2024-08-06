@@ -1,11 +1,12 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Mainframe from './components/Dashboard';
+import Mainframe from './components/Mainframe';
 import Navbar from './components/Navbar';
 import Login from './components/Login';
 import Signup from './components/Signup';
 import PrivateRoute from './components/PrivateRoutes';
 import Home from './components/Home';
 import About from './components/About';
+import QuestScreen from './components/QuestScreen';
 
 // import Home from './components/Home';
 // import About from './components/About';
@@ -28,6 +29,7 @@ function App() {
               <Route path="/login" element={<Login />} />
               <Route path="/signup" element={<Signup />} />
               <Route path="/mainframe" element={<PrivateRoute><Mainframe /></PrivateRoute>} />
+              <Route path="/quest/:id" element={<PrivateRoute><QuestScreen /></PrivateRoute>} />
             </Routes>
           </div>
         </div>

@@ -1,4 +1,4 @@
-import React from 'react';
+import { Link } from 'react-router-dom';
 
 const quests = [
     {
@@ -59,10 +59,10 @@ const quests = [
     }
 ];
 
-function Dashboard() {
+function Mainframe() {
     return (
-        <div className="bg-gray-900 text-cyan-300 p-8 min-h-screen font-mono">
-            <div className="max-w-4xl mx-auto">
+        <div className="text-cyan-300 p-8 min-h-screen font-mono">
+            <div className="max-w-17xl mx-auto">
                 <h1 className="text-4xl font-bold mb-6 text-center text-cyan-400 shadow-cyan-500/50">Gopher Quest: Code Chronicles</h1>
                 <div className="bg-black bg-opacity-70 p-6 rounded-lg shadow-lg border border-cyan-800">
                     <h2 className="text-2xl font-semibold mb-4 text-cyan-300">Available Quests</h2>
@@ -75,9 +75,12 @@ function Dashboard() {
                                     <span className="text-xs text-yellow-400">Difficulty: {quest.difficulty}</span>
                                     <span className="text-xs text-green-400">Reward: {quest.reward}</span>
                                 </div>
-                                <button className="mt-3 bg-cyan-600 hover:bg-cyan-700 text-white text-sm font-bold py-2 px-4 rounded transition duration-300">
+                                <Link
+                                    to={`/quest/${quest.id}`}
+                                    className="mt-3 bg-cyan-600 hover:bg-cyan-700 text-white text-sm font-bold py-2 px-4 rounded transition duration-300 inline-block"
+                                >
                                     Embark on Quest
-                                </button>
+                                </Link>
                             </div>
                         ))}
                     </div>
@@ -87,4 +90,4 @@ function Dashboard() {
     );
 }
 
-export default Dashboard;
+export default Mainframe;
